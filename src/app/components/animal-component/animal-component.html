@@ -1,0 +1,24 @@
+<h1>lisa de animales</h1>
+<p>animal-component works!</p>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Tipo</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of animalList; track item.id) {
+                <tr>
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.edad}}</td>
+                    <td>{{item.tipo}}</td>
+                    <td>{{item.fecha}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
